@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Solution</title>
+    <title>Lab11 CONTARDO CRUZ</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,19 +13,10 @@
       <div class="container-fluid">
 
         <div class="nav navbar-nav">
-          <div>
-            <%= link_to('Home', :root) %>         
-          </div>
-          <div>
-            <%= render 'devise/menu/registration_items' %>
-          </div>
-
-          <div>
-            <%= render 'devise/menu/login_items' %>
-          </div>
-          <div>
-            <%= render 'shopping_carts/shopping_cart' %>
-          </div>
+          <button style="background-color:#75b0ec;border-style:none; "><%= link_to('Home', :root) %></button>
+          <button style="background-color:#75b0ec;border-style:none;"><%= render 'devise/menu/registration_items' %></button>
+          <button style="background-color:#75b0ec;border-style:none;"><%= render 'devise/menu/login_items' %></button>
+          <button style="background-color:#75b0ec;border-style:none;"><%= render 'shopping_carts/shopping_cart' %></button>
 
           <div>
             <p class="notice"><%= notice %></p>
